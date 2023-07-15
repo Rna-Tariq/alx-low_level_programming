@@ -13,14 +13,14 @@ int main(void)
 	char char_lower = 'a';
 	char char_upper = 'A';
 	/* prints a-z */
-	while (char_lower = 'a')
+	while (char_lower <= 'z')
 	{
 		putchar(char_lower);
 		char_lower++;
 	}
 
 	/* print A-Z */
-	while (char_upper <= z)
+	while (char_upper <= 'Z')
 	{
 		putchar(char_upper);
 		char_upper++;
