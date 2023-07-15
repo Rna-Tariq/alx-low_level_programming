@@ -5,18 +5,18 @@
 *
 *Description: print alphabet in lowercase then in uppercase
 *
-* Return: Always 0 (Success)
+*Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	char = 'a';
-	char_upper = 'A';
+	char char_lower = 'a';
+	char char_upper = 'A';
 	/* prints a-z */
-	while (char = 'a')
+	while (char_lower = 'a')
 	{
-		putchar(char);
-		char++;
+		putchar(char_lower);
+		char_lower++;
 	}
 
 	/* print A-Z */
