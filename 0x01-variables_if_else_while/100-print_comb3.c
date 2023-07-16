@@ -11,24 +11,28 @@
 int main(void)
 {
 	int x = 0;
-	int y = 0;
+	int y;
 
 	while (x <= 9)
 	{
-		if (x != y)
+		y = 0;
+		while (y <= 9)
 		{
-			putchar (x + 48);
-			putchar(y + 48);
-
-			if (x + y != 17)
+			if (x != y)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar (x + 48);
+				putchar(y + 48);
+
+				if (x + y != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
+			y++;
 		}
-		y++;
+		x++;
 	}
-	x++;
 	putchar('\n');
 
 	return (0);
