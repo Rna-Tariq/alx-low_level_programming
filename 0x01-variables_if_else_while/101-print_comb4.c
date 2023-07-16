@@ -34,11 +34,11 @@ int main(void)
 						putchar(' ');
 					}
 				}
+				z++
 			}
-			z++;
-		y++;
+			y++
 		}
-	x++;
+		x++;
 	}
 	putchar('\n');
 
