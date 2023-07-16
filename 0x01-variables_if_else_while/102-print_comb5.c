@@ -21,10 +21,10 @@ int main(void)
 			if (y != x)
 			{
 				putchar((x / 10) + 48);
-				putchar((x / 10) + 48);
+				putchar((x % 10) + 48);
 				putchar(' ');
 				putchar((y / 10) + 48);
-				putchar((y / 10) + 48);
+				putchar((y % 10) + 48);
 
 				if (x != 98 || y != 99)
 				{
