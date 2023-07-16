@@ -24,7 +24,7 @@ int main(void)
 
 				if (x != y && x < y && y != z && y < z)
 				{
-					putchar (x + 48);
+					putchar(x + 48);
 					putchar(y + 48);
 					putchar(z + 48);
 
@@ -36,7 +36,6 @@ int main(void)
 				}
 			}
 			z++;
-
 		y++;
 		}
 	x++;
