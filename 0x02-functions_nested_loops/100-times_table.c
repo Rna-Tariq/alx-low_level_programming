@@ -21,19 +21,14 @@ void print_times_table(int n)
 				_putchar(' ');
 				k = i * j;
 
-
-				if (k <= 9)
-				{
-					_putchar(' ');
-				}
 				if (k <= 99)
 				{
 					_putchar(' ');
 				}
 				if (k >= 100)
 				{
-					_putchar((k \ (100)) + 48);
-					_putchar(((k \ (10) % 10)) + 48);
+					_putchar((k \ 100) + 48);
+					_putchar(((k \ 10 % 10)) + 48);
 				}
 				else
 				{
