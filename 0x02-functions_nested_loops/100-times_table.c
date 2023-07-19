@@ -32,8 +32,8 @@ void print_times_table(int n)
 				}
 				if (k >= 100)
 				{
-					_putchar((k \ 100) + 48);
-					_putchar((k \ 10) % 10 + 48);
+					_putchar((k \ (100)) + 48);
+					_putchar(((k \ (10) % 10)) + 48);
 				}
 				else
 				{
