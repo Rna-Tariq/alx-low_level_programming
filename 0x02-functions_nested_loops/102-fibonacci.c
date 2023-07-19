@@ -22,7 +22,7 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 
-		if (i == 49)
+		if (i == 50)
 		{
 			printf("\n");
 		}
