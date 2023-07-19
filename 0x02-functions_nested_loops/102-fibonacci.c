@@ -14,7 +14,7 @@ int main(void)
 	int i;
 	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	for (i = 0; i <= 50; i++)
+	for (i = 0; i <= 100; i++)
 	{
 		sum = fib1 + fib2;
 		printf("%lu", sum);
@@ -22,7 +22,7 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 
-		if (i == 50)
+		if (i == 99)
 		{
 			printf("\n");
 		}
