@@ -1,31 +1,29 @@
 #include "main.h"
 
 /**
-* print_diagonal - function draws a diagonal line on the terminal.
-*
-* @n: input
-*
-* Return: void
-*/
+ * largest_number - returns the largest of 3 numbers
+ * @a: first integer
+ * @b: second integer
+ * @c: third integer
+ * Return: largest number
+ */
 
-void print_diagonal(int n)
+int largest_number(int a, int b, int c)
 {
-	int i, j;
+	int largest;
 
-	if (n <= 0)
+	if (a >= b && a >= c)
 	{
-		_putchar('\n');
+		largest = a;
+	}
+	else if (b >= a && b >= c)
+	{
+		largest = b;
 	}
 	else
 	{
-		for (i = 1; i <= n; i++)
-		{
-			for (j = 1; j <= i; j++)
-			{
-				_putchar(' ');
-			}
-			_putchar(92); /*is equal to '/' char*/
-			_putchar('\n');
-		}
+		largest = c;
 	}
+
+	return (largest);
 }
