@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_number - a function encodes a string into 1337.
+* print_number - a function that prints an integer..
 *
 * @n: input.
 *
@@ -10,18 +10,19 @@
 
 void print_number(int n)
 {
-	unsigned int digit = n;
+	unsigned int n1;
 
 	if (n < 0)
 	{
+		n1 = -n;
 		_putchar('-');
-		digit = -digit;
-	}
-
-	if ((digit / 10) > 0)
+	} else
 	{
-		print_number(digit / 10);
+		n1 = n;
 	}
 
-	_putchar((digit % 10) + '0');
+	if (n1 / 10)
+		print_number(n1 / 10);
+
+	_putchar((n1 % 10) + '0');
 }
