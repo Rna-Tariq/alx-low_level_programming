@@ -8,7 +8,7 @@
 * Return: encoded string.
 */
 
-char *leet(char *)
+char *leet(char *s)
 {
 	int i, j;
 
