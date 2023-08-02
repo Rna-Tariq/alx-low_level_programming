@@ -19,10 +19,12 @@ void _print_rev_recursion(char *s)
 		len++;
 	}
 
+	i = len - 1;
+
 	if (j <= len)
 	{
 		putchar(s[i]);
-		_print_rev_recursion(s[i++]);
+		_print_rev_recursion(s[i--]);
 	}
 	else
 	{
