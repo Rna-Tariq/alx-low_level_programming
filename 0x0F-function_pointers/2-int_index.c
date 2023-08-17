@@ -7,14 +7,14 @@
 * @size: array size
 * @cmp: function pointer
 *
-* Return: Required integer index
+* Return: Required integer index OR -1
 */
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i = 0;
 
-	if (array && siz && cmp)
+	if (array && size && cmp)
 	{
 		while (i < size)
 		{
