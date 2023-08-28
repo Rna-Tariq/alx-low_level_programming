@@ -17,10 +17,13 @@ size_t listint_len(const listint_t *h)
 	{
 		if (!h->n)
 		{
-			printf("[0] (nil)\n");
+			printf("0\n");
 		}
-		h = h->next;
-		s++;
+		else
+		{
+			h = h->next;
+			s++;
+		}
 	}
 	return (s);
 }
