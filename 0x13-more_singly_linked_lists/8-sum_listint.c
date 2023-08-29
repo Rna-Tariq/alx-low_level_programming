@@ -13,12 +13,12 @@
 
 int sum_listint(listint_t *head)
 {
-	listint_t *tmp = *head;
+	listint_t *tmp = head;
 	int sum = 0;
 
 	while (tmp)
 	{
-		sum += head->n;
+		sum += tmp->n;
 		tmp = tmp->next;
 	}
 	return (sum);
