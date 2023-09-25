@@ -1,1 +1,1 @@
-C is a low programming language
+C is a low level programming language
